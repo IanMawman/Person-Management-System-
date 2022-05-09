@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!---- Defines code underneath as html-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Management.css" media="screen"/>
+<!-- Includes boostrap and css data into the code.-->
+
+</head>
+
+
+
+
+<style>
+   header {
+        text-align:center;
+        font-size: xx-large ; 
+    }
+    p {
+        text-align: center;
+        font-size: x-large;
+    }
+    h2 {
+      text-align: center;
+      font-size: x-large;
+    }
+    /* makes the text aligned in the middle and stand out when needed*/
+    .navbar-one { 
+            background-color:rgb(224, 222, 222); 
+            color: black;
+        } 
+        /* navbar background color and text color */ 
+          
+        .middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+/*aligns image */
+</style>
+<title>Person Management</title>
+<div class="container">
+    <div class="jumbotron">
+        <div id="jumbotron1">
+         <b><header>Turbo</header></b>
+        <p>Employee Management made easy!<p>
+        </div>
+  </div>
+    </div>
+    </div>
+<!--The Jumbotron is placed at the top of the page, allows me to change-->
+<!--and also add contrasting colors for the page's background-->
+
+    <nav class="navbar navbar-one">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">People Management</a> 
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li> 
+            <li><a href="#">Contact Us</a></li> <!-- can change to new page or load modal with details or google form--> 
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><button type="button" class="btn" data-toggle="modal" data-target="#signup1">Sign Up</button></span> </button></li> <!-- Centre buttons needs doing.-->
+            <li><button type="button" class="btn" data-toggle="modal" data-target="#login1">Login</button> </span></button></li> <!-- Centre buttons needs doing.-->  <!-- unless change all to buttons and make nav bar smaller.-->
+</nav>
+<!-- li = list-->
+<!--This is the Nav bar put into the -->
+<!-- The button in the nav bar leads to the modal to sign up and log in-->
+
+
+<div class="modal fade" id="login1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="mdtitle">Log In Now</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div> 
+      <div class="modal-body">
+        <body>
+          <!-- form for logging in-->
+        <form action = "login.php" name = "form1" method = "POST"> <!-- form name/id-->
+          <p>Username:
+            <p>
+              <input id="username" type="text" required= "required" placeholder="Enter your username"> 
+              <p>Password:             <!-- id for username and password to be called in log in file.-->
+            <p>
+             <input id="password" type= "password" required="required" placeholder="Enter your password"> 
+    </form> 
+     </body>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="submit" name= "login.php" class="btn btn-success" name = "loginbttn">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- both these modals are bootstrap, centred with forms to log in and sign up-->
+
+<div class="modal fade" id="signup1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="mdtitle">Sign Up Now</h2> <!-- maybe on click event with javascript, called in both log in and sign up file.-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div> 
+      <div class="modal-body">
+        <body>
+          <!-- form for signing up-->
+        <form  action = "register.php" name = form2 method="POST"> <!-- form name/id-->
+          <p>Username:
+            <p>
+              <input id="signusername" type="text" reqired= "requried" placeholder="Enter your username"> 
+              <p>Password:             <!-- id for username and password to be called in sign up file.-->
+            <p>
+             <input id="signpassword" type= "password" required="required" placeholder="Enter your password">
+             <p>Confirm Password:             <!-- id for username and password to be called in sign up file.-->
+              <p>
+               <input id="conpassword" type= "password" required="required" placeholder="Enter your password again">
+    </form> 
+     </body>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="submit" name= "register.php" class="btn btn-success" name = "signupbttn">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+ <b><h2>Contanct us now!</h2></b>
+<img src ="https://footage.framepool.com/shotimg/qf/230765839-conference-table-business-meeting-conference-room-authority.jpg" alt ="" class = "middle"> <!-- image added from google.-->
+
+<p>This software is used to manage your employee resources, check their progress and add notes for a later date.</p>
+<p>This is a completely free software which allows small buisnesses to manage their company for less</p> <!-- brief explination of what the software does-->
+</body>
+<footer></footer>
+<!--Footer adds the title and name of the project-->
+<!-- Ian's Person Management software-->
+</hmtl>
